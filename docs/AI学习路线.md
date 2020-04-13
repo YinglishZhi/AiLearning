@@ -1,44 +1,49 @@
 # 基础知识
+
 ![图片](https://uploader.shimo.im/f/bxR0xWoah6gf2gMo.png!thumbnail)
+
 ## 1.数学
+
 数学是学不完的，也没有几个人能像博士一样扎实地学好数学基础，入门人工智能领域，其实只需要掌握必要的基础知识就好。AI的数学基础最主要是高等数学、线性代数、概率论与数理统计三门课程，这三门课程是本科必修的。这里整理了一个简易的数学入门文章。
-数学基础：高等数学
-[https://zhuanlan.zhihu.com/p/36311622](https://zhuanlan.zhihu.com/p/36311622)
-数学基础：线性代数
-[https://zhuanlan.zhihu.com/p/36584206](https://zhuanlan.zhihu.com/p/36584206)
-数学基础：概率论与数理统计
-[https://zhuanlan.zhihu.com/p/36584335](https://zhuanlan.zhihu.com/p/36584335)
+
+[数学基础：高等数学](https://zhuanlan.zhihu.com/p/36311622)
+
+[数学基础：线性代数](https://zhuanlan.zhihu.com/p/36584206)
+
+[数学基础：概率论与数理统计](https://zhuanlan.zhihu.com/p/36584335)
 
 机器学习的数学基础资料下载：
 1.机器学习的数学基础.docx
 中文版，对高等数学、线性代数、概率论与数理统计三门课的公式做了总结
 2) 斯坦福大学机器学习的数学基础.pdf
 原版英文材料，非常全面，建议英语好的同学直接学习这个材料
-下载链接: [https://pan.baidu.com/s/1LaUlrJzy98CG1Wma9FgBtg](https://pan.baidu.com/s/1LaUlrJzy98CG1Wma9FgBtg) 提取码: hktx 
-
-推荐教材
-相比国内浙大版和同济版的数学教材，通俗易懂，便于初学者更好地奠定数学基础
-下载链接：[https://blog.csdn.net/Datawhale/article/details/81744961](https://blog.csdn.net/Datawhale/article/details/81744961)
+下载链接: [斯坦福大学机器学习的数学基础.pdf](https://pan.baidu.com/s/1LaUlrJzy98CG1Wma9FgBtg) 提取码: hktx
 
 ## 2.统计学
+
 * 入门教材：
 
 深入浅出统计学
+
 * 进阶教材：
 
 商务与经济统计
+
 * 视频
 
 可汗学院统计学：[http://open.163.com/special/Khan/khstatistics.html](http://open.163.com/special/Khan/khstatistics.html)
 
 ## 3.编程
+
 入门人工智能领域，推荐Python这门编程语言。
-1) Python安装：
+
+### Python安装
+
 关于python安装包，我推荐下载Anaconda，Anaconda是一个用于科学计算的Python发行版，支持 Linux, Mac, Windows系统，提供了包管理与环境管理的功能，可以很方便地解决多版本Python并存、切换以及各种第三方包安装问题。
-下载地址：[https://www.](https://link.zhihu.com/?target=https%3A//www.anaconda.com/download/)[anaconda.com/download/](https://link.zhihu.com/?target=https%3A//www.anaconda.com/download/) 推荐选Anaconda （python 3.7版本）
+下载地址：[Anaconda Python 3.7](https://link.zhihu.com/?target=https%3A//www.anaconda.com/download/) 推荐选Anaconda （python 3.7版本）
 
 IDE：推荐使用pycharm，社区版免费
-下载地址：[https://www.](https://link.zhihu.com/?target=https%3A//www.jetbrains.com/)[jetbrains.com/](https://link.zhihu.com/?target=https%3A//www.jetbrains.com/)
+下载地址：[PyCharm](https://link.zhihu.com/?target=https%3A//www.jetbrains.com/)
 
 安装教程：
 Anaconda+Jupyter notebook+Pycharm：
@@ -46,47 +51,53 @@ Anaconda+Jupyter notebook+Pycharm：
 Ubuntu18.04深度学习环境配置(CUDA9+CUDNN7.4+TensorFlow1.8)：
 [https://zhuanlan.zhihu.com/p/50302396](https://zhuanlan.zhihu.com/p/50302396)
 
+### python入门的资料推荐
 
-2) python入门的资料推荐
-a.廖雪峰python学习笔记
-[https://blog.csdn.net/datawhale/article/category/7779959](https://blog.csdn.net/datawhale/article/category/7779959)
+a.[廖雪峰python学习笔记](https://blog.csdn.net/datawhale/article/category/7779959)
 
 b.python入门笔记
 作者李金，这个是jupyter notebook文件，把python的主要语法演示了一次，值得推荐。
-下载链接: [https://pan.baidu.com/s/1IPZI5rygbIh5R5OuTHajzA](https://pan.baidu.com/s/1IPZI5rygbIh5R5OuTHajzA) 提取码: 2bzh 
-
+下载链接: [python入门笔记](https://pan.baidu.com/s/1IPZI5rygbIh5R5OuTHajzA) 提取码: 2bzh
 
 c.南京大学python视频教程
 这个教程非常值得推荐，python主要语法和常用的库基本涵盖了。
-查看地址：[https://www.icourse163.org/course/0809NJU004-1001571005?from=study](https://www.icourse163.org/course/0809NJU004-1001571005?from=study)
+查看地址：[南京大学python视频教程](https://www.icourse163.org/course/0809NJU004-1001571005?from=study)
 
 看完这三个资料，python基本入门了，可以使用scikit-learn等机器学习库来解决机器学习的
 问题了。
 
-3）补充
-代码规范：
-[https://zhuanlan.zhihu.com/p/59763076](https://zhuanlan.zhihu.com/p/59763076)
-numpy练习题：
-[https://zhuanlan.zhihu.com/p/57872490](https://zhuanlan.zhihu.com/p/57872490)
-pandas练习题：
-[https://zhuanlan.zhihu.com/p/56644669](https://zhuanlan.zhihu.com/p/56644669)
+### 补充
+
+[代码规范：](https://zhuanlan.zhihu.com/p/59763076)
+[numpy练习题](https://zhuanlan.zhihu.com/p/57872490)
+[pandas练习题](https://zhuanlan.zhihu.com/p/56644669)
 
 # 数据分析/挖掘
+
 ![图片](https://uploader.shimo.im/f/G1qZ7iUeRrAhFK9u.png!thumbnail)
-## 1.数据分析的基础书籍：
+
+## 1.数据分析的基础书籍
+
 《利用python进行数据分析》
 这本书含有大量的实践案例，你将学会如何利用各种Python库（包括NumPy，Pandas、Matplotlib以及IPython等）高效地解决各式各样的数据分析问题。如果把代码都运行一次，基本上就能解决数据分析的大部分问题了。
-## 2.特征工程：
-[https://blog.csdn.net/Datawhale/article/details/83033869](https://blog.csdn.net/Datawhale/article/details/83033869)
-## 3.数据挖掘项目：
-[https://blog.csdn.net/datawhale/article/details/80847662](https://blog.csdn.net/datawhale/article/details/80847662)
+
+## 2.特征工程
+
+[特征工程](https://blog.csdn.net/Datawhale/article/details/83033869)
+
+## 3.数据挖掘项目
+
+[数据挖掘项目](https://blog.csdn.net/datawhale/article/details/80847662)
+
 # 机器学习
+
 ![图片](https://uploader.shimo.im/f/udrFwkqrEeA6mjVe.png!thumbnail)
+
 ## 1.公开课 - 吴恩达《Machine Learning》
+
 这绝对是机器学习入门的首选课程，没有之一！即便你没有扎实的机器学习所需的扎实的概率论、线性代数等数学基础，也能轻松上手这门机器学习入门课，并体会到机器学习的无穷趣味。
 
-课程主页
-[https://www.coursera.org/learn/machine-learning](https://www.coursera.org/learn/machine-learning)
+[课程主页](https://www.coursera.org/learn/machine-learning)
 
 课程完整思维导图：
 
@@ -102,14 +113,17 @@ pandas练习题：
 **中文笔记及作业代码**
 [https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes)
 
-
 ## 2.公开课 - 吴恩达 CS229
+
 吴恩达在斯坦福教授的机器学习课程 CS229 与 吴恩达在 Coursera 上的《Machine Learning》相似，但是有更多的数学要求和公式的推导，难度稍难一些。该课程对机器学习和统计模式识别进行了广泛的介绍。主题包括：监督学习（生成/鉴别学习、参数/非参数学习、神经网络、支持向量机）；无监督学习（聚类、降维、核方法）；学习理论（偏差/方差权衡；VC理论；大幅度利润）；强化学习和自适应控制。本课程还将讨论机器学习的最新应用，如机器人控制、数据挖掘、自主导航、生物信息学、语音识别以及文本和Web数据处理。
-### 课程主页：[http://cs229.stanford.edu/](http://cs229.stanford.edu/)
+
+### 课程主页：[课程主页](http://cs229.stanford.edu/)
+
 ### 中文视频
 [http://open.163.com/special/opencourse/machinelearning.html](http://open.163.com/special/opencourse/machinelearning.html)
+
 ### 中文笔记
-[https://kivy-cn.github.io/Stanford-CS-229-CN/#/](https://kivy-cn.github.io/Stanford-CS-229-CN/#/)
+[中文笔记](https://kivy-cn.github.io/Stanford-CS-229-CN/#/)
 ### 速查表
 这份给力的资源贡献者是一名斯坦福的毕业生 Shervine Amidi。作者关于 CS229 整理了一份超级详细的速查表
 [https://zhuanlan.zhihu.com/p/56534902](https://zhuanlan.zhihu.com/p/56534902)
