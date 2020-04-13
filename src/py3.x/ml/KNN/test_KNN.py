@@ -1,6 +1,9 @@
 from ml.KNN import kNN
 from numpy import *
 import os
+from sklearn import neighbors
+import matplotlib
+import matplotlib.pyplot as plt
 
 filename = '/Users/mtdp/OneDrive/data/data-master/ml/2.KNN/datingTestSet2.txt'
 
@@ -20,6 +23,13 @@ def create_data_set():
     group = array([[1.0, 1.1], [1.0, 1.0], [0, 0], [0, 0.1]])
     labels = ['A', 'A', 'B', 'B']
     return group, labels
+
+
+def show_data(data_set, date_labels):
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    ax.scatter(data_set[:, 1], data_set[:, 0], 15 * array(date_labels), 15 * array(date_labels))
+    plt.show()
 
 
 def test_case1():
@@ -109,8 +119,48 @@ def handwriting_class_test():
     print("\n the total error rate is: %f" % (error_count / test_m))
 
 
+def hand():
+    # 1. 导入数据
+    handwriting_labels = []
+
+    training_file_list = os.listdir(training_digits_file)
+    m = len(training_file_list)
+    print(m)
+    training_mat = zeros((m, 1024))
+    # handwriting_labels 存储0～9的index位置，trainingMat 存放的每个位置对应的图片向量
+    for i in range(m):
+        training_digits_filename = training_file_list[i]
+        file_str = training_digits_filename.split('.')[0]
+        classifier_number = int(file_str.split('_')[0])
+        handwriting_labels.append(classifier_number)
+        # 将 32 * 32 矩阵 -> 1 * 1024 矩阵
+        training_mat[i] = kNN.img2vector(training_digits_file + '/' + training_digits_filename)
+
+    clf = neighbors.KNeighborsClassifier(6)
+    clf.fit(training_mat, handwriting_labels)
+    # 2. 导入测试数据
+    test_file_list = os.listdir(test_digits_file)
+    error_count = 0
+    test_m = len(test_file_list)
+    for i in range(test_m):
+        test_digits_filename = test_file_list[i]
+        file_str = test_digits_filename.split('.')[0]
+        classifier_number = int(file_str.split('_')[0])
+        vector_under_test = kNN.img2vector(training_digits_file + '/' + test_digits_filename)
+        classifier_result = clf.predict(vector_under_test)
+        print("the sklearn classifier came back with: %d, the real answer is: %d" % (
+            classifier_result, classifier_number))
+        if classifier_result != classifier_number:
+            error_count += 1
+            print("\n the filename is " + test_digits_filename)
+
+    print("\n the total number of errors is: %d" % error_count)
+    print("\n the total error rate is: %f" % (error_count / test_m))
+
+
 if __name__ == '__main__':
     # test_case1()
     # test_dating_class()
     # handwriting_class_test()
-    handwriting_class_test()
+    return_mat, class_label_vector = kNN.file2matrix(filename)
+    show_data(return_mat, class_label_vector)

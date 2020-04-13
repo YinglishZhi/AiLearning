@@ -5,7 +5,7 @@
 Created on 2017-06-28
 Updated on 2017-06-28
 KNN：k近邻算法
-Author: 小瑶
+Author: LDZ
 GitHub: https://github.com/apachecn/AiLearning
 """
 print(__doc__)
