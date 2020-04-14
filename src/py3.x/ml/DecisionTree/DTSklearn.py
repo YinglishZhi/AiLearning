@@ -13,7 +13,7 @@ def createDataSet():
     ''' 数据读入 '''
     data = []
     labels = []
-    with open("data/3.DecisionTree/data.txt") as ifile:
+    with open("data/DecisionTree/data.txt") as ifile:
         for line in ifile:
             # 特征： 身高 体重   label： 胖瘦
             tokens = line.strip().split(' ')
@@ -94,7 +94,7 @@ def show_pdf(clf):
     dot_data = StringIO()
     tree.export_graphviz(clf, out_file=dot_data)
     graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
-    graph.write_pdf("../../../output/3.DecisionTree/tree.pdf")
+    graph.write_pdf("../../../output/DecisionTree/tree.pdf")
 
     # from IPython.display import Image
     # Image(graph.create_png())

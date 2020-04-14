@@ -52,7 +52,8 @@ def getTreeDepth(myTree):
 
 
 def plotNode(nodeTxt, centerPt, parentPt, nodeType):
-    createPlot.ax1.annotate(nodeTxt, xy=parentPt,  xycoords='axes fraction', xytext=centerPt, textcoords='axes fraction', va="center", ha="center", bbox=nodeType, arrowprops=arrow_args)
+    createPlot.ax1.annotate(nodeTxt, xy=parentPt, xycoords='axes fraction', xytext=centerPt, textcoords='axes fraction',
+                            va="center", ha="center", bbox=nodeType, arrowprops=arrow_args)
 
 
 def plotMidText(cntrPt, parentPt, txtString):
@@ -131,7 +132,6 @@ def retrieveTree(i):
         {'no surfacing': {0: 'no', 1: {'flippers': {0: {'head': {0: 'no', 1: 'yes'}}, 1: 'no'}}}}
     ]
     return listOfTrees[i]
-
 
 # myTree = retrieveTree(1)
 # createPlot(myTree)
